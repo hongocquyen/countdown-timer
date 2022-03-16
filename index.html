@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Countdown Timer</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="time.js" defer></script>
+
+  </head>
+
+  <body>
+    <nav>
+      <!--Logo-->
+    <img class ="logo" src="img/logo.jpg" alt="logo" height="70px" width="70px">
+      <ul class="nav__links">
+        <li><a href="#">Home</a></li>
+        <!-- <li><a href="#">Settings</a></li> -->
+        <div class="dropdown">
+          <button class="dropbtn">Settings 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <!-- <a href="#">Link 3</a> -->
+            <input type="text" id="text" placeholder="Title" value="">
+            <input type="text" id="date" placeholder="mm/dd/yyyy" value="">
+            <button class ="submit" onclick="Submit()">Submit</button>
+          </div>
+        </div> 
+        <div class="dropdown">
+          <button class="dropbtn">About 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="https://www.facebook.com/shin.sherlock/">Facebook</a>
+            <a href="https://www.instagram.com/shnriscat/">Instagram</a>
+            <a href="https://github.com/shnriscat">Github</a>
+            
+          </div>
+        </div> 
+      </ul>
+    </nav>
+    <section>
+    <h1 class = "title" id = "title"></h1>
+    <div class="countdown-container">
+      <div class = "countdown-el days-container">
+        <p class="big-text" id="days">00</p>
+        <span>days</span>
+      </div>
+      <div class = "countdown-el hours-container">
+        <p class="big-text" id="hours">00</p>
+        <span>hours</span>
+      </div>
+      <div class = "countdown-el mins-container">
+        <p class="big-text" id="minutes">00</p>
+        <span>minutes</span>
+      </div>
+      <div class = "countdown-el seconds-container">
+        <p class="big-text" id="seconds">00</p>
+        <span>seconds</span>
+      </div>
+    </div>
+    </section>
+  </body>
+</html>
